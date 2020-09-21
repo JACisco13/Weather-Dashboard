@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/style.css">
+            <title>Weather Dashboard</title>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <nav class="navbar">
+            <span class="navbar-brand mb-0 h1" style="margin: auto;">Weather Dashboard</span>
+            </nav>
+        </header>
+
+        <!-- Search, history, and Current Forecast-->
+        <main class="container padding">
+            <div class="row">
+                <div class="col-md-24">
+                    <div class="row search">
+                        <div class="col-md-24">
+                            <h3>Search for a city</h3>
+                            <label for="searchCity"></label>
+                            <input type="text" id="searchCity" /><br />
+                            <br /><button id="searchBtn">Search</button><br />
+                            <br /><div id="previousSearch"></div>
+                        </div>
+                        <div class="col-md-12 cityName forecast">
+                            <img id="curIcn" src="">
+                            <p id="todaysWeather"></p>
+                            <p id="uvCon"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-day Forecast-->
+            <div class="container padding">
+                <div class="row">
+                    
+                    <!-- Day 1 -->
+                    <div id="conditionStyle1" class="col-sm-2">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <img id="wthrIcn1" src="">
+                                <p id="forcDay1" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 2 -->
+                    <div id="conditionStyle2" class="col-sm-2">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <img id="wthrIcn2" src="">
+                                <p id="forcDay2" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 3 -->
+                    <div id="conditionStyle3" class="col-sm-2">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <img id="wthrIcn3" src="">
+                                <p id="forcDay3" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 4 -->
+                    <div id="conditionStyle4" class="col-sm-2">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <img id="wthrIcn4" src="">
+                                <p id="forcDay4" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Day 5 -->
+                    <div id="conditionStyle5" class="col-sm-2">
+                        <div class="card mt-2">
+                            <div class="card-body">
+                                <img id="wthrIcn5" src="">
+                                <p id="forcDay5" class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="assets/script.js"></script>
+    </body>
+
+</html>

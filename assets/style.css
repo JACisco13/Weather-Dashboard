@@ -1,0 +1,50 @@
+.navbar {
+    background-color: black;
+    color: white;
+}
+.navbar-brand {
+    display: inline-block;
+}
+
+main {
+    background-color: whitesmoke;
+}
+.search {
+    width: 100%;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.cityName,
+.forecast {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.forecast {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.favorable {
+  background-color: green;
+}
+
+.moderate {
+  background-color: yellow;
+}
+
+.severe {
+  background-color: red;
+}
